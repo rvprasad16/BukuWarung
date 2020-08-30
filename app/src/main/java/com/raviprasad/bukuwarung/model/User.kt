@@ -13,7 +13,7 @@ data class User (
     @SerializedName("total_page")
     var total_pages : Long?,
     @SerializedName("data")
-    var data : Array<Data>?,
+    var data : MutableList<Data>?,
     @SerializedName("ad")
     var ad : Ad?
 )

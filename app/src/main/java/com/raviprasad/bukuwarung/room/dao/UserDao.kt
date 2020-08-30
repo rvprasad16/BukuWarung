@@ -13,5 +13,5 @@ interface UserDao {
     fun addUser(userdata: Data)
 
     @Query("SELECT * FROM user")
-    fun getUser(): Array<Data?>?
+    fun getUser(): MutableList<Data?>?
 }
