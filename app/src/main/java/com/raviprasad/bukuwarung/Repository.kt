@@ -26,12 +26,12 @@ class Repository {
 
         var userData =check.body()
 
-        if(check.code()==201 && userData!=null){
+        if(userData!=null){
             for (i in userData.data!!)
                 database.userDao()!!.addUser(i)
             userList.addAll(database.userDao()!!.getUser() as Collection<Data>)
         }else{
-
+            userList.addAll(database.userDao()!!.getUser() as Collection<Data>)
         }
         }catch (e :Exception){
             userList.addAll(database.userDao()!!.getUser() as Collection<Data>)
