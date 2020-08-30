@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide
 import com.raviprasad.bukuwarung.R
 import com.raviprasad.bukuwarung.databinding.LayoutUserBinding
 import com.raviprasad.bukuwarung.room.entity.Data
-import com.raviprasad.bukuwarung.ui.UserProfile.UserProfileActivity
+import com.raviprasad.bukuwarung.ui.user_profile.UserProfileActivity
 
 class HomeAdapter(var context : Context,var data : List<Data> ) : RecyclerView.Adapter<HomeAdapter.ViewHolder>(){
 
