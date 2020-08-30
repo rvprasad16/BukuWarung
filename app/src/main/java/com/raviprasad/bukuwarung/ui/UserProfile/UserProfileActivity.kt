@@ -1,4 +1,4 @@
-package com.raviprasad.bukuwarung.ui
+package com.raviprasad.bukuwarung.ui.UserProfile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

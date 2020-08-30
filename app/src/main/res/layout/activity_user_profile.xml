@@ -5,12 +5,12 @@
     <data>
         <variable
             name="userprofile"
-            type="com.raviprasad.bukuwarung.ui.UserProfileViewModel" />
+            type="com.raviprasad.bukuwarung.ui.UserProfile.UserProfileViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.UserProfileActivity">
+        tools:context=".ui.UserProfile.UserProfileActivity">
         <ImageView
             android:id="@+id/image_view"
             android:layout_width="match_parent"

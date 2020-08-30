@@ -4,7 +4,7 @@ import android.app.Application
 import android.content.Context
 import androidx.databinding.ObservableBoolean
 import androidx.lifecycle.*
-import com.raviprasad.bukuwarung.Repository
+import com.raviprasad.bukuwarung.repository.Repository
 import com.raviprasad.bukuwarung.room.entity.Data
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -17,7 +17,8 @@ class HomeViewModel : AndroidViewModel {
     var progressBarvisibility  = ObservableBoolean(false)
 
     constructor(application: Application):super(application){
-        reposotory= Repository(application.applicationContext)
+        reposotory=
+            Repository(application.applicationContext)
         this.context = application.applicationContext
     }
 

@@ -1,9 +1,7 @@
-package com.raviprasad.bukuwarung
+package com.raviprasad.bukuwarung.repository
 
 import android.content.Context
-import android.util.Log
 import androidx.room.Room
-import com.raviprasad.bukuwarung.model.User
 import com.raviprasad.bukuwarung.network.RetrofitInstance
 import com.raviprasad.bukuwarung.room.db.Database
 import com.raviprasad.bukuwarung.room.entity.Data

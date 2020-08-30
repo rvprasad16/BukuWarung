@@ -1,4 +1,4 @@
-package com.raviprasad.bukuwarung.ui
+package com.raviprasad.bukuwarung.ui.UserProfile
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
