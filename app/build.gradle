@@ -87,8 +87,9 @@ dependencies {
     //fragment
     implementation "androidx.fragment:fragment-ktx:$fragment_version"
 
-    //androidx material design
-    implementation "androidx.compose.material:material:0.1.0-dev17"
+    //Glide
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+    kapt "com.github.bumptech.glide:compiler:4.11.0"
 
     //recycle view
     implementation "androidx.recyclerview:recyclerview:1.1.0"

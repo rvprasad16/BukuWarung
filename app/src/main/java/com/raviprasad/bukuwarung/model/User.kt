@@ -5,13 +5,13 @@ import com.raviprasad.bukuwarung.room.entity.Data
 
 data class User (
     @SerializedName("page")
-    var page: Long?,
+    var page: Int?,
     @SerializedName("per_page")
-    var per_page: Long?,
+    var per_page: Int?,
     @SerializedName("total")
-    var total: Long?,
+    var total: Int?,
     @SerializedName("total_page")
-    var total_pages : Long?,
+    var total_pages : Int?,
     @SerializedName("data")
     var data : MutableList<Data>?,
     @SerializedName("ad")

@@ -1,6 +1,7 @@
 package com.raviprasad.bukuwarung
 
 import android.content.Context
+import android.util.Log
 import androidx.room.Room
 import com.raviprasad.bukuwarung.model.User
 import com.raviprasad.bukuwarung.network.RetrofitInstance
@@ -18,19 +19,26 @@ class Repository {
     }
     var service= RetrofitInstance()
 
-    suspend fun user() : Array<Data>? {
-        var userData =service.getApiService().user().body()
+    suspend fun getUser() : MutableList<Data>? {
         var userList = mutableListOf<Data>()
-        if(userData!=null){
-            //add data to room and send data from room
+        try {
+            var check = service.getApiService().user();
+
+        var userData =check.body()
+
+        if(check.code()==201 && userData!=null){
             for (i in userData.data!!)
                 database.userDao()!!.addUser(i)
             userList.addAll(database.userDao()!!.getUser() as Collection<Data>)
         }else{
-            //send data form room
+
+        }
+        }catch (e :Exception){
             userList.addAll(database.userDao()!!.getUser() as Collection<Data>)
         }
-        return userList as Array<Data>
+
+        return userList
+
     }
 
 }

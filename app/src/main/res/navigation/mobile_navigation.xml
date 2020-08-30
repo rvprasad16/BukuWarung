@@ -10,9 +10,6 @@
         android:name="com.raviprasad.bukuwarung.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_profile" />
     </fragment>
 
     <fragment
@@ -20,9 +17,7 @@
         android:name="com.raviprasad.bukuwarung.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_navigation_dashboard_to_navigation_home"
-            app:destination="@id/navigation_home" />
+
     </fragment>
 
 
