@@ -41,4 +41,8 @@ class Repository {
 
     }
 
+    suspend fun addUser(data :Data){
+        database.userDao()!!.addUser(data)
+    }
+
 }

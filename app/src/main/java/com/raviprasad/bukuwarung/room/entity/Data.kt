@@ -12,7 +12,7 @@ class Data (
     @NonNull
     @PrimaryKey
     @SerializedName("id")
-    var id : Long,
+    var id : Int,
 
     @ColumnInfo(name="user_email")
     @SerializedName("email")
